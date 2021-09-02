@@ -17,7 +17,7 @@ async def on_message(message):
 
     if message.content.startswith('ping'):
         await message.channel.send('pong!')
-@client.command(description="A simple ping pong command.",guild_ids=[828199925086421013])
+@client.command(description="A simple ping pong command.",guild_ids=[ID]) # for multiple guilds , seperate with a comma. Eg: ID-1,ID-2
 async def ping(ctx):
   await ctx.respond(f"pong!")
 client.run(token)
