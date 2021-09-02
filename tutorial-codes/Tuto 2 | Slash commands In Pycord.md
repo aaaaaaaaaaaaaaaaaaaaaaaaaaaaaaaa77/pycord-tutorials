@@ -20,7 +20,7 @@ async def on_message(message):
 
 @client.slash_command(description="A simple ping pong command.")
 async def ping(ctx):
-  if ctx.guild.id == 803548112160423977:
+  if ctx.guild.id == GUILD ID:
     await ctx.send(f"pong!")
 client.run(token)
 
