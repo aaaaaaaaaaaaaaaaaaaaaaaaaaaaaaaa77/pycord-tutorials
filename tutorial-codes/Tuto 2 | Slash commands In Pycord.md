@@ -18,9 +18,10 @@ async def on_message(message):
     if message.content.startswith('ping'):
         await message.channel.send('pong!')
 
-@client.command(description="A simple ping pong command.")
+@client.slash_command(description="A simple ping pong command.")
 async def ping(ctx):
-  if ctx.guild.id == "SERVER ID HERE":
+  if ctx.guild.id == 803548112160423977:
     await ctx.send(f"pong!")
 client.run(token)
+
 ```
