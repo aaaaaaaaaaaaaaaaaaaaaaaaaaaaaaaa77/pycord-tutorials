@@ -1,4 +1,4 @@
-
+Tutorial 2 | [Slash commands in Pycord](https://youtu.be/)
 ```py
 import discord
 from discord.ext import commands 
